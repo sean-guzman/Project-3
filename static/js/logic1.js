@@ -1,6 +1,6 @@
-console.log("logic.js")
+console.log("logic1.js")
 
-d3.json("https://us-east-1.aws.data.mongodb-api.com/app/data-qgrcp/endpoint/types_of_EVs_by_Brand_by_Year").then(function (data) {
+d3.json("http://127.0.0.1:5000/get_types_of_evs").then(function (data) {
   console.log("data")
   console.log(data)
 

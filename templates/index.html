@@ -1,45 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="static/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" />
+  
+    <!-- Leaflet.markercluster CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.Default.css" />
+  
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="static/css/style.css" />
   </head>
 
-<body>
+  <body>
 
-<h2>Electric/Hybrid Vehicle Dashboard for Prospective Buyers</h2>
-<p>Click on the buttons to view the data:</p>
+    <h2>Electric/Hybrid Vehicle Dashboard for Prospective Buyers</h2>
+    <p>Click on the buttons to view the data:</p>
 
-<div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Cars by Brand')">Cars by Brand</button>
-  <button class="tablinks" onclick="openCity(event, 'Marker Map')">Marker Map</button>
-  <button class="tablinks" onclick="openCity(event, 'Number of Vehicles')">Number of Vehicles</button>
-  <button class="tablinks" onclick="openCity(event, 'Price')">Price</button>
-</div>
+    <div class="tab">
+      <button class="tablinks" onclick="goToPage('/types_of_evs')">Cars by Brand</button>
+      <button class="tablinks" onclick="goToPage('/charge_stations')">Marker Map</button>
+      <button class="tablinks" onclick="goToPage('/current_ev_prices')">Number of Vehicles</button>
+      <button class="tablinks" onclick="goToPage('/avg_price_ev_new')">New Prices</button>
+      <button class="tablinks" onclick="goToPage('/avg_gas_electric_prices')">Electric/Gas Prices</button>
+      <button class="tablinks" onclick="goToPage('/incentive_data_col')">Incentives</button>
+      <button class="tablinks" onclick="goToPage('/vehicle_policy_col')">Policies</button>
 
-<div id="Cars by Brand" class="tabcontent">
-  <h3>Cars by Brand</h3>
-  <p>This data shows how many types of electric/hybrid cars were being sold by brand by year.</p>
-</div>
+    </div>
 
-<div id="Marker Map" class="tabcontent">
-  <h3>Marker Map</h3>
-  <p>This map shows all the charging stations in the US.</p> 
-</div>
+    <div id="Cars by Brand" class="tabcontent">
+      <h3>Cars by Brand</h3>
+      <p>This data shows how many types of electric/hybrid cars were being sold by brand by year.</p>
+    </div>
 
-<div id="Number of Vehicles" class="tabcontent">
-  <h3>Number of Vehicles</h3>
-  <p>This data shows how many electric/hybrid vehicles are on the road.</p>
-</div>
+    <div id="Marker Map" class="tabcontent">
+      <h3>Marker Map</h3>
+      <p>This map shows all the charging stations in the US.</p>
+      <div id="map"></div>
+      <div id="layer-selector">
+        <label for="layer-select">Select Layer:</label>
+        <select id="layer-select">
+          <option value="heatmap">Heatmap</option>
+          <option value="markers">Markers</option>
+        </select>
+      </div>
+      <button class="home-button" onclick="goToIndex()">Home</button>
+    </div>
 
-<div id="Price" class="tabcontent">
-    <h3>Price</h3>
-    <p>This data shows the cost of electric/hybrid vehicles.</p>
-  </div>
+    <div id="Number of Vehicles" class="tabcontent">
+      <h3>Number of Vehicles</h3>
+      <p>This data shows how many electric/hybrid vehicles are on the road.</p>
+    </div>
 
-<script src="../static/js/logic.js"></script>
-   
+    <div id="Price" class="tabcontent">
+        <h3>Price</h3>
+        <p>This data shows the cost of electric/hybrid vehicles.</p>
+    </div>
+
+  <!-- Leaflet JavaScript code -->
+  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"></script>
+
+  <!-- Leaflet.markercluster JavaScript code -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster.js"></script>
+
+  <!-- Leaflet Heat plugin -->
+  <script src="https://cdn.jsdelivr.net/gh/Leaflet/Leaflet.heat/dist/leaflet-heat.js"></script>
+
+  <!-- D3 library -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <!-- Your JavaScript file -->
+  <script src="static/js/marker_map.js"></script>
+
+  <script>
+    function goToPage(pageURL) {
+      window.location.href = pageURL;
+    }
+
+    // JavaScript code to execute when the page loads
+    window.addEventListener('DOMContentLoaded', (event) => {
+    // Code to show the "Home" button on page load
+    document.querySelector('.home-button').style.display = 'block';
+    });
+  </script>
 </body>
 
 </html>
-
