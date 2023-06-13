@@ -7,11 +7,13 @@
   <title>Document</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
+  <link rel="stylesheet" href="static/css/style.css" />
+
 
 </head>
 <body>
 
-  <div><select id="selMake" onchange="optionSelect(this.value)"><option value="">Select Make</option></select></div>
+  <div class="tab"><h3>Current EV Prices (USD) by Make</h3><select id="selMake" onchange="optionSelect(this.value)"><option value="">Select Make</option></select></div>
 
   <div class="chart-container" style="position: relative; height:70vh;">
     <canvas id="myChart"></canvas>

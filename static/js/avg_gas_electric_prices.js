@@ -47,7 +47,7 @@ d3.json(avg_gas_electric_prices_url).then(function(data){
       plugins: {
         title: {
             display: true,
-            text: 'National Average Cost of Gas versus Electric (2001-2022)'
+            text: 'National Average Cost (USD) of Gas versus Electric (2001-2022)'
         }
       },
     

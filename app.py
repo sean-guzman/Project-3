@@ -78,21 +78,6 @@ def avg_gas_electric_prices():
     return render_template('avg_gas_electric_prices.html')
 
 #LAUREN
-@app.route('/get_incentive_data_col', methods=['GET'])
-def get_incentive_data_col():
-    collection = mongo.db.incentive_data_col
-    data = list(collection.find())
-
-    for document in data:
-        document['_id'] = str(document['_id'])
-
-    return jsonify(data)
-
-@app.route("/incentive_data_col")
-def incentive_data_col():
-    
-    return render_template('index1.html')
-
 @app.route('/get_vehicle_policy_col', methods=['GET'])
 def get_vehicle_policy_col():
     collection = mongo.db.vehicle_policy_col
@@ -106,7 +91,7 @@ def get_vehicle_policy_col():
 @app.route("/vehicle_policy_col")
 def vehicle_policy_col():
     
-    return render_template('index1.html')
+    return render_template('vehicle_policy_col.html')
 
 
 
