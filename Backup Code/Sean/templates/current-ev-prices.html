@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+
+</head>
+<body>
+
+  <div><select id="selMake" onchange="optionSelect(this.value)"><option value="">Select Make</option></select></div>
+
+  <div class="chart-container" style="position: relative; height:70vh;">
+    <canvas id="myChart"></canvas>
+  </div>
+
+</body>
+
+<script>
+  const url = "http://127.0.0.1:5000/get_ev_prices";
+  var counter = 0;
+
+  var chart;
+
+  console.log(counter);
+
+  var make = [];
+
+  var selector = d3.select("#selMake");
+
+  
+    
+  d3.json(url).then(function(data){
+
+    console.log(data[0]);
+
+    for (var i = 0; i < data.length; i++){
+      
+      var obj = data[i];
+
+      if(!make.includes(obj.Make)){
+        make.push(obj.Make)
+      }
+
+
+    
+    };
+
+    // console.log(make);
+
+    make.forEach((item) => {
+      selector.append("option").text(item).property("value", item);
+    })
+  })
+
+  function optionSelect(selected_make) {
+
+    var models = [];
+    var base_price = [];
+    var dest_charge = [];
+    var tax_credit = [];
+    var total_price = [];
+
+    d3.json(url).then(function(data){
+
+      for (var i = 0; i < data.length; i++){
+        
+        var obj = data[i];
+
+        if(obj.Make.includes(selected_make)){
+          models.push(obj.Model);
+          base_price.push(obj['Base Price']);
+          dest_charge.push(obj['Dest. Charge']);
+          tax_credit.push(obj['Tax Credit']);
+          total_price.push(obj['Effective Price'])
+        };
+      };
+
+      if (counter > 0){
+        chart.destroy();
+      }
+
+      createChart(models, base_price, dest_charge, tax_credit, total_price);
+
+    });
+
+
+    // console.log(years);
+    
+
+  };
+
+
+  function createChart(models, base_price, dest_charge, tax_credit, total_price){
+
+    const ctx = document.getElementById('myChart');
+
+    const labels = models;
+
+    const data = {
+      labels: labels,
+      datasets: [{
+        label: 'Tax Credit',
+        data: tax_credit,
+        borderWidth: 1,
+        backgroundColor:'#ffcfa3'
+        },
+        {label: 'Destination Charge',
+        data: dest_charge,
+        borderWidth: 1,
+        backgroundColor:'#ffb3c2'
+        },
+        {label: 'Base Price',
+        data: base_price,
+        borderWidth: 1,
+        backgroundColor:'#a0d1f6'
+        },
+        {label: 'Total Price',
+        data: total_price,
+        borderWidth: 1,
+        backgroundColor:'#ffe7ae'
+      }]
+    };
+
+    const config = {
+      type: 'bar',
+      data: data,
+      options: {
+        indexAxis: 'y',
+        animations: {
+          tension: {
+            duration: 1000,
+            easing: 'linear',
+            from: 1,
+            to: 0,
+            loop: true
+          }
+        },
+        interaction: {
+          mode: 'nearest',
+          axis: 'y',
+          intersect: false
+        },
+        scales: {
+          y: {
+            stacked: true,
+            beginAtZero: false
+          }
+        }
+      }
+    };
+
+    
+
+    chart = new Chart(ctx, config);
+
+    counter +=1;
+     
+
+    
+
+
+  };
+</script>
+
+</html>
