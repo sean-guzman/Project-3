@@ -91,7 +91,7 @@ def get_incentive_data_col():
 @app.route("/incentive_data_col")
 def incentive_data_col():
     
-    return render_template('incentive_data_col.html')
+    return render_template('index1.html')
 
 @app.route('/get_vehicle_policy_col', methods=['GET'])
 def get_vehicle_policy_col():
@@ -106,7 +106,7 @@ def get_vehicle_policy_col():
 @app.route("/vehicle_policy_col")
 def vehicle_policy_col():
     
-    return render_template('vehicle_policy_col.html')
+    return render_template('index1.html')
 
 
 

@@ -26,8 +26,7 @@
       <button class="tablinks" onclick="goToPage('/current_ev_prices')">Current EV Prices</button>
       <button class="tablinks" onclick="goToPage('/avg_price_ev_new')">EV/New Prices</button>
       <button class="tablinks" onclick="goToPage('/avg_gas_electric_prices')">Electric/Gas Prices</button>
-      <button class="tablinks" onclick="goToPage('/incentive_data_col')">Incentives</button>
-      <button class="tablinks" onclick="goToPage('/vehicle_policy_col')">Policies</button>
+      <button class="tablinks" onclick="goToPage('/vehicle_policy_col')">Incentives/Policies</button>
 
     </div>
 
@@ -36,59 +35,22 @@
       <p>This data shows how many types of electric/hybrid cars were being sold by brand by year.</p>
     </div>
 
-<<<<<<< HEAD
-<div id="Number of Vehicles" class="tabcontent">
-  <h3>Number of Vehicles</h3>
-  <p>This data shows how many electric/hybrid vehicles are on the road, and also how may impact the number of vehicles.</p>
-    <div class="row">
-      <div class="col-md-2">
-        <div class="well">
-          <h5>Year:</h5>
-          <select id="selDataset" onchange="optionChanged(this.value)"></select>
-        </div>
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h3 class="panel-title">National Summary</h3>
-          </div>
-          <div id="sample-metadata" class="panel-body"></div>
-        </div>
-      </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div id="bubble"></div>
-      </div>
+    <div id="Cars by Brand" class="tablinks">
+      <h3>Cars by Brand</h3>
+      <p>This data shows how many types of electric/hybrid cars were being sold by brand by year.</p>
     </div>
-  </div>
 
-</div>
-=======
-    <div id="Marker Map" class="tabcontent">
+    <div id="Marker Map" class="tablinks">
       <h3>Marker Map</h3>
       <p>This map shows all the charging stations in the US.</p>
-      <div id="map"></div>
-      <div id="layer-selector">
-        <label for="layer-select">Select Layer:</label>
-        <select id="layer-select">
-          <option value="heatmap">Heatmap</option>
-          <option value="markers">Markers</option>
-        </select>
-      </div>
-      <button class="home-button" onclick="goToIndex()">Home</button>
     </div>
->>>>>>> f2faaa8582392b23fd6240c24d0bdf2b9af57c35
 
-    <div id="Number of Vehicles" class="tabcontent">
+    <div id="Number of Vehicles" class="tabtablinks">
       <h3>Number of Vehicles</h3>
       <p>This data shows how many electric/hybrid vehicles are on the road.</p>
     </div>
 
-<<<<<<< HEAD
-  <script src="https://d3js.org/d3.v5.min.js"></script>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="../static/js/logic.js"></script>
-
-=======
-    <div id="Price" class="tabcontent">
+    <div id="Price" class="tablinks">
         <h3>Price</h3>
         <p>This data shows the cost of electric/hybrid vehicles.</p>
     </div>
@@ -105,9 +67,6 @@
   <!-- D3 library -->
   <script src="https://d3js.org/d3.v7.min.js"></script>
 
-  <!-- Your JavaScript file -->
-  <script src="static/js/marker_map.js"></script>
-
   <script>
     function goToPage(pageURL) {
       window.location.href = pageURL;
@@ -119,7 +78,6 @@
     document.querySelector('.home-button').style.display = 'block';
     });
   </script>
->>>>>>> f2faaa8582392b23fd6240c24d0bdf2b9af57c35
 </body>
 
 </html>
