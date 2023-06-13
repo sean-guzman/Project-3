@@ -13,7 +13,18 @@
 </head>
 <body>
 
-  <div class="tab"><h1>Current EV Prices (USD) by Make</h1>
+  <div class="tab">
+    <button class="tablinks" onclick="goToPage('/charge_stations')">Marker Map</button>
+    <button class="tablinks" onclick="goToPage('/types_of_evs')">Cars by Brand</button>
+    <button class="tablinks" onclick="goToPage('/current_ev_prices')">Current EV Prices</button>
+    <button class="tablinks" onclick="goToPage('/avg_price_ev_new')">EV/Overall Market</button>
+    <button class="tablinks" onclick="goToPage('/avg_gas_electric_prices')">Electric/Gas Costs</button>
+    <button class="tablinks" onclick="goToPage('/vehicle_policy_col')">Vehicle Policies</button>
+    <button class="tablinks" onclick="goToPage('/')">Home</button>
+
+  </div>
+
+  <div class="float-container"><h1>Current EV Prices (USD) by Make</h1>
     <p>Select Car Make to view their models and prices.</p>
     <select id="selMake" onchange="optionSelect(this.value)"><option value="">Select Make</option></select>
   </div>
@@ -174,4 +185,15 @@
   };
 </script>
 
+<script>
+  function goToPage(pageURL) {
+    window.location.href = pageURL;
+  }
+
+  // JavaScript code to execute when the page loads
+  window.addEventListener('DOMContentLoaded', (event) => {
+  // Code to show the "Home" button on page load
+  document.querySelector('.home-button').style.display = 'block';
+  });
+</script>
 </html>
