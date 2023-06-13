@@ -4,11 +4,14 @@ var years = [];
 var gas = [];
 var electric = [];
 
+// FETCH DATA
 d3.json(avg_gas_electric_prices_url).then(function(data){
 
   for (var i = 0; i < data.length; i++){
     
     var obj = data[i];
+
+    // PUSH EACH OBJECT'S TO RESPECTIVE ARRAY
 
     years.push(obj['Year']);
     gas.push(obj['Gas Value']);
@@ -17,6 +20,8 @@ d3.json(avg_gas_electric_prices_url).then(function(data){
   };
 
   // console.log(years);
+
+  // GET HTML ELEMENT WHERE TO PLACE CHART
   const ctx = document.getElementById('avg_gas_electric');
 
   const chart = new Chart(ctx, {

@@ -11,14 +11,19 @@ d3.json(avg_price_ev_new_url).then(function(data){
     
     var obj = data[i];
 
+    // PUSH EACH OBJECT'S TO RESPECTIVE ARRAY
+
     price_years.push(obj['Dates']);
     ev.push(obj['Average EV Price']);
     new_car.push(obj['New Car Average']);
   
   };
 
-  console.log(price_years);
-  console.log(ev);
+  // console.log(price_years);
+  // console.log(ev);
+
+  // GET HTML ELEMENT WHERE TO PLACE CHART
+
   const ctx = document.getElementById('avg_price_ev_new');
 
   let delayed;

@@ -93,6 +93,11 @@ def vehicle_policy_col():
     
     return render_template('vehicle_policy_col.html')
 
+@app.route("/vehicle_policy_col_test")
+def vehicle_policy_col_test():
+    
+    return render_template('vehicle_policy_col_test.html')
+
 
 
 #JUSTINE 
