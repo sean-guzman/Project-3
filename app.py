@@ -1,9 +1,12 @@
 from flask import Flask, jsonify, render_template
 from flask_pymongo import PyMongo
 from bson import ObjectId
+from api_keys import user, pw
+
+url = f"mongodb+srv://{user}:{pw}@atlascluster.hbnzjsz.mongodb.net/mydatabase?retryWrites=true&w=majority"
 
 app = Flask(__name__)
-app.config["MONGO_URI"] = "mongodb+srv://coryscar:Rutgers123!@atlascluster.hbnzjsz.mongodb.net/mydatabase?retryWrites=true&w=majority"
+app.config["MONGO_URI"] = url
 mongo = PyMongo(app)
 
 @app.route("/")
