@@ -13,6 +13,8 @@ function createCharts(selectedYear) {
     let chartVar = data
     let chartVar2 = chartVar.filter(obj => obj.Year === selectedYear)
     console.log("The data filtered by year is:")
+
+    console.log(selectedYear);
     console.table(chartVar2)
     
     // Establish variables
@@ -26,9 +28,9 @@ function createCharts(selectedYear) {
     for (let i = 0; i < chartVar2.length; i++) {
         let id = chartVar2[i].State
         let ev_total = chartVar2[i].Electric_Hybrid_Vehicles_Total
-        let total = chartVar2[i].Total_Vehicles.$numberInt
-        let ratio = chartVar2[i].EV_Hybrid_Ratio.$numberDouble
-        let label = chartVar2[i].Policy_Count.$numberDouble
+        let total = chartVar2[i].Total_Vehicles
+        let ratio = chartVar2[i].EV_Hybrid_Ratio
+        let label = chartVar2[i].Policy_Count
 
         ids.push(id);
         ev_totals.push(ev_total);

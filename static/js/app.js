@@ -13,6 +13,8 @@ function createCharts(selectedYear) {
     let chartVar = data
     let chartVar2 = chartVar.filter(obj => obj.Year.$numberInt === selectedYear)
     console.log("The data filtered by year is:")
+
+    console.log(selectedYear);
     console.table(chartVar2)
     
     // Establish variables
