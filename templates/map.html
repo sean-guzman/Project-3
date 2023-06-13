@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ChargeStations</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" />
+
+  <!-- Leaflet.markercluster CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.Default.css" />
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" href="static/css/style.css" />
+
+</head>
+
+<body>
+
+  <div id="map"></div>
+
+  <div id="layer-selector">
+    <label for="layer-select">Select Layer:</label>
+    <select id="layer-select">
+      <option value="heatmap">Heatmap</option>
+      <option value="markers">Markers</option>
+    </select>
+    <button class="home-button" onclick="goToIndex()">Home</button>
+  </div>
+
+  <!-- Leaflet JavaScript code -->
+  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"></script>
+
+  <!-- Leaflet.markercluster JavaScript code -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster.js"></script>
+
+  <!-- Leaflet Heat plugin -->
+  <script src="https://cdn.jsdelivr.net/gh/Leaflet/Leaflet.heat/dist/leaflet-heat.js"></script>
+
+  <!-- D3 library -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <!-- JavaScript file -->
+  <script type="text/javascript" src="static/js/map.js"></script>
+
+</body>
+
+</html>
