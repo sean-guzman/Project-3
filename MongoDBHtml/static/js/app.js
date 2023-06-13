@@ -219,3 +219,8 @@ function optionChanged(newSample){
 
 // Initialize the dashboard
 init();
+
+// Return back to the homepage
+function goToIndex() {
+    window.location.href = 'index.html';
+  }

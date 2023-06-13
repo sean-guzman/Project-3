@@ -86,6 +86,11 @@ d3.json(avg_price_ev_new_url).then(function(data){
 
 });
 
+// Return back to the homepage
+function goToIndex() {
+  window.location.href = 'index.html';
+}
+
 
 
 
