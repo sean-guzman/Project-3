@@ -42,7 +42,7 @@ def get_ev_prices():
 @app.route("/current_ev_prices")
 def current_ev_prices():
     
-    return render_template('current-ev-prices.html')
+    return render_template('current_ev_prices.html')
 
 @app.route('/get_avg_price_ev_new', methods=['GET'])
 def get_avg_rice_ev_new():
@@ -57,9 +57,9 @@ def get_avg_rice_ev_new():
 @app.route("/avg_price_ev_new")
 def avg_price_ev_new():
     
-    return render_template('avg-price-ev-new.html')
+    return render_template('avg_price_ev_new.html')
 
-@app.route('/get_avg-gas-electric-prices', methods=['GET'])
+@app.route('/get_avg_gas_electric_prices', methods=['GET'])
 def get_avg_gas_electric_prices():
     collection = mongo.db.avg_gas_electric_prices
     data = list(collection.find())
@@ -72,7 +72,7 @@ def get_avg_gas_electric_prices():
 @app.route("/avg_gas_electric_prices")
 def avg_gas_electric_prices():
     
-    return render_template('avg-gas-electric-prices.html')
+    return render_template('avg_gas_electric_prices.html')
 
 #LAUREN
 @app.route('/get_incentive_data_col', methods=['GET'])
@@ -121,7 +121,7 @@ def get_data3():
 @app.route("/types_of_evs")
 def types_of_evs():
     
-    return render_template('logic1')
+    return render_template('types_of_evs.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

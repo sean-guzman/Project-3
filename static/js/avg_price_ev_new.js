@@ -1,4 +1,4 @@
-const avg_price_ev_new_url = "https://us-east-1.aws.data.mongodb-api.com/app/data-qgrcp/endpoint/avg_price_ev_new";
+const avg_price_ev_new_url = "http://127.0.0.1:5000/get_avg_price_ev_new";
 
 var price_years = [];
 var ev = [];

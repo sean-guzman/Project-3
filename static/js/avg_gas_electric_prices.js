@@ -1,4 +1,4 @@
-const avg_gas_electric_prices_url = "https://us-east-1.aws.data.mongodb-api.com/app/data-qgrcp/endpoint/avg_gas_electric_prices";
+const avg_gas_electric_prices_url = "http://127.0.0.1:5000/get_avg_gas_electric_prices";
 
 var years = [];
 var gas = [];
