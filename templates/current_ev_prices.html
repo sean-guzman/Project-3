@@ -13,7 +13,10 @@
 </head>
 <body>
 
-  <div class="tab"><h3>Current EV Prices (USD) by Make</h3><select id="selMake" onchange="optionSelect(this.value)"><option value="">Select Make</option></select></div>
+  <div class="tab"><h1>Current EV Prices (USD) by Make</h1>
+    <p>Select Car Make to view their models and prices.</p>
+    <select id="selMake" onchange="optionSelect(this.value)"><option value="">Select Make</option></select>
+  </div>
 
   <div class="chart-container" style="position: relative; height:70vh;">
     <canvas id="myChart"></canvas>
@@ -54,7 +57,10 @@
     // console.log(make);
 
     make.forEach((item) => {
-      selector.append("option").text(item).property("value", item);
+      selector
+      .append("option")
+      .text(item)
+      .property("value", item);
     })
   })
 

@@ -20,6 +20,8 @@ With the rise in EVs/hybrid vehicles, we are curious how the infrastructure is a
 - HTML
 - JavaScript
 - API Flask
+- Chart.js
+
 
 ## Installation
 

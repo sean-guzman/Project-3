@@ -1,5 +1,7 @@
 // Establish URL variable
-const url = "http://127.0.0.1:5000/get_vehicle_policy_col"
+// const url = "http://127.0.0.1:5000/get_vehicle_policy_col"
+
+const url = "https://us-east-1.aws.data.mongodb-api.com/app/data-qgrcp/endpoint/get_vehicle_policy_col"
 
 // Establish function to create visualizations
 function createCharts(selectedYear) {
@@ -143,8 +145,8 @@ function createCharts(selectedYear) {
             //traceorder: 'reversed',
             // title: {}
         },
-        height: 800,
-        width: 1200
+        height: 400,
+        width: 600
     };
 
     // Render the plot to the div tag with id "bubble"

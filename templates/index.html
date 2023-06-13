@@ -24,20 +24,30 @@
       <button class="tablinks" onclick="goToPage('/types_of_evs')">Cars by Brand</button>
       <button class="tablinks" onclick="goToPage('/charge_stations')">Marker Map</button>
       <button class="tablinks" onclick="goToPage('/current_ev_prices')">Current EV Prices</button>
-      <button class="tablinks" onclick="goToPage('/avg_price_ev_new')">EV/New Prices</button>
-      <button class="tablinks" onclick="goToPage('/avg_gas_electric_prices')">Electric/Gas Prices</button>
+      <button class="tablinks" onclick="goToPage('/avg_price_ev_new')">EV/Overall Market</button>
+      <button class="tablinks" onclick="goToPage('/avg_gas_electric_prices')">Electric/Gas Costs</button>
       <button class="tablinks" onclick="goToPage('/vehicle_policy_col')">Vehicle Policies</button>
 
     </div>
 
-    <div id="Cars by Brand" class="tabcontent">
-      <h3>Cars by Brand</h3>
-      <p>This data shows how many types of electric/hybrid cars were being sold by brand by year.</p>
+    <div id="Vehicle Policies" class="tablinks">
+      <h3>Vehicle Policies</h3>
+      <p>This data shows the cost of electricity versus gas from the past 20 years.</p>
     </div>
 
-    <div id="Cars by Brand" class="tablinks">
-      <h3>Cars by Brand</h3>
-      <p>This data shows how many types of electric/hybrid cars were being sold by brand by year.</p>
+    <div id="Electric-Gas Costs" class="tablinks">
+      <h3>Electric/Gas Costs</h3>
+      <p>This data shows the cost of electricity versus gas from the past 20 years.</p>
+    </div>
+
+    <div id="EV-New Prices" class="tablinks">
+      <h3>EV/Overall Market Prices</h3>
+      <p>This data shows the cost of electric vehicles versus the overall market (2020-2023).</p>
+    </div>
+
+    <div id="Price" class="tablinks">
+        <h3>Current EV Prices</h3>
+        <p>This data shows the current cost of electric vehicles filtered by brand.</p>
     </div>
 
     <div id="Marker Map" class="tablinks">
@@ -45,14 +55,9 @@
       <p>This map shows all the charging stations in the US.</p>
     </div>
 
-    <div id="Number of Vehicles" class="tabtablinks">
-      <h3>Number of Vehicles</h3>
-      <p>This data shows how many electric/hybrid vehicles are on the road.</p>
-    </div>
-
-    <div id="Price" class="tablinks">
-        <h3>Price</h3>
-        <p>This data shows the cost of electric/hybrid vehicles.</p>
+    <div id="Cars by Brand" class="tablinks">
+      <h3>Cars by Brand</h3>
+      <p>This data shows how many types of electric/hybrid cars were being sold by brand by year.</p>
     </div>
 
   <!-- Leaflet JavaScript code -->
