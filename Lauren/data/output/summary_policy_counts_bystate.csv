@@ -1,0 +1,313 @@
+,State,Count,Year
+0,Alaska,0,2016
+1,Alabama,1,2016
+2,Arkansas,0,2016
+3,Arizona,2,2016
+4,California,4,2016
+5,Colorado,3,2016
+6,Connecticut,0,2016
+7,District of Columbia,1,2016
+8,Delaware,1,2016
+9,Florida,2,2016
+10,Georgia,1,2016
+11,Hawaii,1,2016
+12,Iowa,0,2016
+13,Idaho,1,2016
+14,Illinois,2,2016
+15,Indiana,0,2016
+16,Kansas,0,2016
+17,Kentucky,0,2016
+18,Louisiana,0,2016
+19,Massachusetts,1,2016
+20,Maryland,0,2016
+21,Maine,0,2016
+22,Michigan,2,2016
+23,Minnesota,3,2016
+24,Missouri,0,2016
+25,Mississippi,0,2016
+26,Montana,0,2016
+27,North Carolina,1,2016
+28,North Dakota,0,2016
+29,Nebraska,0,2016
+30,New Hampshire,1,2016
+31,New Jersey,1,2016
+32,New Mexico,0,2016
+33,Nevada,2,2016
+34,New York,2,2016
+35,Ohio,0,2016
+36,Oklahoma,1,2016
+37,Oregon,2,2016
+38,Pennsylvania,0,2016
+39,Rhode Island,1,2016
+40,South Carolina,0,2016
+41,South Dakota,0,2016
+42,Tennessee,1,2016
+43,Texas,1,2016
+44,US,0,2016
+45,Utah,1,2016
+46,Virginia,2,2016
+47,Vermont,0,2016
+48,Washington,0,2016
+49,Wisconsin,1,2016
+50,West Virginia,0,2016
+51,Wyoming,0,2016
+0,Alaska,0,2017
+1,Alabama,1,2017
+2,Arkansas,0,2017
+3,Arizona,2,2017
+4,California,6,2017
+5,Colorado,3,2017
+6,Connecticut,0,2017
+7,District of Columbia,1,2017
+8,Delaware,1,2017
+9,Florida,3,2017
+10,Georgia,1,2017
+11,Hawaii,1,2017
+12,Iowa,0,2017
+13,Idaho,1,2017
+14,Illinois,2,2017
+15,Indiana,1,2017
+16,Kansas,0,2017
+17,Kentucky,0,2017
+18,Louisiana,1,2017
+19,Massachusetts,1,2017
+20,Maryland,0,2017
+21,Maine,0,2017
+22,Michigan,2,2017
+23,Minnesota,3,2017
+24,Missouri,0,2017
+25,Mississippi,0,2017
+26,Montana,0,2017
+27,North Carolina,1,2017
+28,North Dakota,0,2017
+29,Nebraska,0,2017
+30,New Hampshire,1,2017
+31,New Jersey,1,2017
+32,New Mexico,0,2017
+33,Nevada,2,2017
+34,New York,3,2017
+35,Ohio,0,2017
+36,Oklahoma,1,2017
+37,Oregon,2,2017
+38,Pennsylvania,0,2017
+39,Rhode Island,1,2017
+40,South Carolina,0,2017
+41,South Dakota,0,2017
+42,Tennessee,1,2017
+43,Texas,1,2017
+44,US,0,2017
+45,Utah,1,2017
+46,Virginia,2,2017
+47,Vermont,0,2017
+48,Washington,1,2017
+49,Wisconsin,1,2017
+50,West Virginia,0,2017
+51,Wyoming,0,2017
+0,Alaska,0,2018
+1,Alabama,0,2018
+2,Arkansas,0,2018
+3,Arizona,4,2018
+4,California,15,2018
+5,Colorado,4,2018
+6,Connecticut,1,2018
+7,District of Columbia,1,2018
+8,Delaware,2,2018
+9,Florida,3,2018
+10,Georgia,1,2018
+11,Hawaii,1,2018
+12,Iowa,0,2018
+13,Idaho,1,2018
+14,Illinois,0,2018
+15,Indiana,1,2018
+16,Kansas,0,2018
+17,Kentucky,0,2018
+18,Louisiana,1,2018
+19,Massachusetts,3,2018
+20,Maryland,2,2018
+21,Maine,0,2018
+22,Michigan,2,2018
+23,Minnesota,6,2018
+24,Missouri,0,2018
+25,Mississippi,0,2018
+26,Montana,0,2018
+27,North Carolina,1,2018
+28,North Dakota,0,2018
+29,Nebraska,0,2018
+30,New Hampshire,4,2018
+31,New Jersey,3,2018
+32,New Mexico,0,2018
+33,Nevada,2,2018
+34,New York,4,2018
+35,Ohio,1,2018
+36,Oklahoma,1,2018
+37,Oregon,1,2018
+38,Pennsylvania,1,2018
+39,Rhode Island,1,2018
+40,South Carolina,0,2018
+41,South Dakota,0,2018
+42,Tennessee,1,2018
+43,Texas,2,2018
+44,US,0,2018
+45,Utah,2,2018
+46,Virginia,2,2018
+47,Vermont,0,2018
+48,Washington,1,2018
+49,Wisconsin,1,2018
+50,West Virginia,0,2018
+51,Wyoming,0,2018
+0,Alaska,0,2019
+1,Alabama,0,2019
+2,Arkansas,1,2019
+3,Arizona,7,2019
+4,California,20,2019
+5,Colorado,5,2019
+6,Connecticut,3,2019
+7,District of Columbia,2,2019
+8,Delaware,2,2019
+9,Florida,4,2019
+10,Georgia,2,2019
+11,Hawaii,2,2019
+12,Iowa,2,2019
+13,Idaho,1,2019
+14,Illinois,0,2019
+15,Indiana,0,2019
+16,Kansas,0,2019
+17,Kentucky,0,2019
+18,Louisiana,1,2019
+19,Massachusetts,4,2019
+20,Maryland,1,2019
+21,Maine,1,2019
+22,Michigan,4,2019
+23,Minnesota,8,2019
+24,Missouri,0,2019
+25,Mississippi,0,2019
+26,Montana,0,2019
+27,North Carolina,1,2019
+28,North Dakota,0,2019
+29,Nebraska,1,2019
+30,New Hampshire,4,2019
+31,New Jersey,2,2019
+32,New Mexico,1,2019
+33,Nevada,2,2019
+34,New York,6,2019
+35,Ohio,1,2019
+36,Oklahoma,2,2019
+37,Oregon,3,2019
+38,Pennsylvania,2,2019
+39,Rhode Island,1,2019
+40,South Carolina,0,2019
+41,South Dakota,0,2019
+42,Tennessee,2,2019
+43,Texas,5,2019
+44,US,1,2019
+45,Utah,2,2019
+46,Virginia,2,2019
+47,Vermont,8,2019
+48,Washington,2,2019
+49,Wisconsin,4,2019
+50,West Virginia,0,2019
+51,Wyoming,0,2019
+0,Alaska,0,2020
+1,Alabama,0,2020
+2,Arkansas,0,2020
+3,Arizona,8,2020
+4,California,24,2020
+5,Colorado,6,2020
+6,Connecticut,3,2020
+7,District of Columbia,2,2020
+8,Delaware,4,2020
+9,Florida,3,2020
+10,Georgia,5,2020
+11,Hawaii,2,2020
+12,Iowa,1,2020
+13,Idaho,1,2020
+14,Illinois,0,2020
+15,Indiana,0,2020
+16,Kansas,0,2020
+17,Kentucky,0,2020
+18,Louisiana,1,2020
+19,Massachusetts,6,2020
+20,Maryland,5,2020
+21,Maine,1,2020
+22,Michigan,6,2020
+23,Minnesota,9,2020
+24,Missouri,0,2020
+25,Mississippi,0,2020
+26,Montana,0,2020
+27,North Carolina,1,2020
+28,North Dakota,0,2020
+29,Nebraska,1,2020
+30,New Hampshire,4,2020
+31,New Jersey,2,2020
+32,New Mexico,1,2020
+33,Nevada,2,2020
+34,New York,6,2020
+35,Ohio,1,2020
+36,Oklahoma,3,2020
+37,Oregon,4,2020
+38,Pennsylvania,3,2020
+39,Rhode Island,1,2020
+40,South Carolina,0,2020
+41,South Dakota,0,2020
+42,Tennessee,1,2020
+43,Texas,5,2020
+44,US,1,2020
+45,Utah,3,2020
+46,Virginia,3,2020
+47,Vermont,8,2020
+48,Washington,1,2020
+49,Wisconsin,3,2020
+50,West Virginia,1,2020
+51,Wyoming,0,2020
+0,Alaska,2,2021
+1,Alabama,0,2021
+2,Arkansas,1,2021
+3,Arizona,6,2021
+4,California,29,2021
+5,Colorado,6,2021
+6,Connecticut,5,2021
+7,District of Columbia,3,2021
+8,Delaware,4,2021
+9,Florida,3,2021
+10,Georgia,4,2021
+11,Hawaii,1,2021
+12,Iowa,1,2021
+13,Idaho,1,2021
+14,Illinois,2,2021
+15,Indiana,0,2021
+16,Kansas,0,2021
+17,Kentucky,0,2021
+18,Louisiana,2,2021
+19,Massachusetts,6,2021
+20,Maryland,4,2021
+21,Maine,1,2021
+22,Michigan,8,2021
+23,Minnesota,10,2021
+24,Missouri,0,2021
+25,Mississippi,0,2021
+26,Montana,0,2021
+27,North Carolina,3,2021
+28,North Dakota,0,2021
+29,Nebraska,1,2021
+30,New Hampshire,4,2021
+31,New Jersey,3,2021
+32,New Mexico,2,2021
+33,Nevada,2,2021
+34,New York,10,2021
+35,Ohio,1,2021
+36,Oklahoma,3,2021
+37,Oregon,9,2021
+38,Pennsylvania,2,2021
+39,Rhode Island,1,2021
+40,South Carolina,2,2021
+41,South Dakota,0,2021
+42,Tennessee,1,2021
+43,Texas,5,2021
+44,US,2,2021
+45,Utah,5,2021
+46,Virginia,4,2021
+47,Vermont,9,2021
+48,Washington,3,2021
+49,Wisconsin,5,2021
+50,West Virginia,1,2021
+51,Wyoming,0,2021

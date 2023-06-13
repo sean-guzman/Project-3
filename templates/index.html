@@ -29,7 +29,27 @@
 
 <div id="Number of Vehicles" class="tabcontent">
   <h3>Number of Vehicles</h3>
-  <p>This data shows how many electric/hybrid vehicles are on the road.</p>
+  <p>This data shows how many electric/hybrid vehicles are on the road, and also how may impact the number of vehicles.</p>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="well">
+          <h5>Year:</h5>
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">National Summary</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 <div id="Price" class="tabcontent">
@@ -37,8 +57,10 @@
     <p>This data shows the cost of electric/hybrid vehicles.</p>
   </div>
 
-<script src="../static/js/logic.js"></script>
-   
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="../static/js/logic.js"></script>
+
 </body>
 
 </html>
