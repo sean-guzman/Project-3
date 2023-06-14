@@ -37,6 +37,7 @@ Why?
 ## Built With
 
 - Python with Pandas
+- Jupyter Notebook
 - MongoDB
 - HTML
 - JavaScript
@@ -56,7 +57,7 @@ In order to correctly run our code, ensure you download PyMongo to correctly run
 - D3.js
 - JSON
 - GitHub
-- GitPages
+- GitHub Pages
 - console.log
 - [ytdec GitHub repository](https://github.com/ytdec)
 
