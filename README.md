@@ -2,10 +2,10 @@
 
 Rutgers Data Sciences Bootcamp, (13 June 2023)
 
-- Lauren Golden, https://github.com/laurenhgolden
-- Sean Guzman, https://github.com/sean-guzman
-- Justine Owsik, https://github.com/jowsik
-- Cory Scarnecchia, https://github.com/cscar43
+- Lauren Golden, (https://github.com/laurenhgolden)
+- Sean Guzman, (https://github.com/sean-guzman)
+- Justine Owsik, (https://github.com/jowsik)
+- Cory Scarnecchia, (https://github.com/cscar43)
 
 With the rise in EVs/hybrid vehicles, we are curious how the infrastructure is adjusting with the market. We are also curious as to how government subsidies play a role in the expansion of EVs/hybrid sales and expansion. Through this project, we build a visualization showing in real-time the availability of charging stations around the country, and graphs representing the growth over time, the cost of gas versus electricity over time, and the cost of EVs compared to the overall market.
 
@@ -63,4 +63,4 @@ In order to correctly run our code, ensure you download PyMongo to correctly run
 
 ## Deployment
 
-This project has been published using GitPages and can be accessed via https://sean-guzman.github.io/Project-3/MongoDBHtml/index.html
+This project has been published using GitPages and can be accessed via (https://sean-guzman.github.io/Project-3/MongoDBHtml/index.html)
