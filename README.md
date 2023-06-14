@@ -63,4 +63,4 @@ In order to correctly run our code, ensure you download PyMongo to correctly run
 
 ## Deployment
 
-This project has been published using GitPages and can be accessed via [https://us-east-1.aws.data.mongodb-api.com/app/data-qgrcp/endpoint/us_charge_stations](https://sean-guzman.github.io/Project-3/MongoDBHtml/index.html)
+This project has been published using GitPages and can be accessed via [https://sean-guzman.github.io/Project-3/MongoDBHtml/index.html](https://sean-guzman.github.io/Project-3/MongoDBHtml/index.html)
