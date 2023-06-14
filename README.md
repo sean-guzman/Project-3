@@ -1,5 +1,7 @@
 # Project 3
 
+Rutgers Data Sciences Bootcamp, (13 June 2023)
+
 - Lauren Golden, https://github.com/laurenhgolden
 - Sean Guzman, https://github.com/sean-guzman
 - Justine Owsik, https://github.com/jowsik
@@ -32,7 +34,7 @@ Why?
 - [Open Charge Map API](https://api.openchargemap.io/v3/poi)
 
 
-# Built With
+## Built With
 
 - Python with Pandas
 - MongoDB
