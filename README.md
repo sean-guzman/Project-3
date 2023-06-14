@@ -53,7 +53,7 @@ In order to correctly run our code, ensure you download PyMongo to correctly run
 
 Repo link contains all files demonstrating web scraping and data cleaning skills in Jupyter Notebook, as well pushing data to a Mongo database.  A local Flask server is built (app.py) where it then pulls the various collections of our data from MongoDB Cloud into separate routes to call upon.  Other routes are created to render all the html files for our site.
 
-To take our site live, we push to GitHub Pages, slightly modifying the method in which the data from MongoDB is retrieved.  Direct HTTP endpoints are created in MonogoDB Cloud in order to achieve this alternative to Flask.
+To take our site live, we push to GitHub Pages, slightly modifying the method in which the data from MongoDB is retrieved.  Direct HTTP endpoints are created in MongoDB Cloud in order to achieve this alternative to Flask.
 
 ## Tools and Sources
 
