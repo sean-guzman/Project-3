@@ -47,7 +47,7 @@ body {font-family: Arial;}
 }
 
 .float-child {
-  width: 50%;
+  width: 100%;
   float: left;
   padding: 20px;
 }  

@@ -76,8 +76,8 @@ function createCharts(selectedYear) {
             title: 'Number of Total Vehicles'
         },
         showlegend: false,
-        height: 400,
-        width: 600
+        height: 700,
+        width: 1200
         };  
 
     // Render the plot to the div tag with id "bar"
@@ -147,8 +147,8 @@ function createCharts(selectedYear) {
             //traceorder: 'reversed',
             // title: {}
         },
-        height: 400,
-        width: 600
+        height: 700,
+        width: 1200
     };
 
     // Render the plot to the div tag with id "bubble"
