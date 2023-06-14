@@ -25,7 +25,7 @@ With the rise in EVs/hybrid vehicles, we are curious how the infrastructure is a
 
 ## Installation
 
-In order to correctly run our code, ensure you download PyMongo to correctly run the Jupyter notebooks. Python file, app.py, powers our our Flask and subsequent website. In order to properly run app.py, it calls another Python file, api_keys.py (not included in repository), which contains user and password credentials to log into our Mongo database to successfully access the data for this website.  As an alternative, this site has been published using GitPages and can be accessed via https://sean-guzman.github.io/Project-3/MongoDBHtml/index.html
+In order to correctly run our code, ensure you download PyMongo to correctly run the Jupyter notebooks. Python file, app.py, powers our our Flask and subsequent website. In order to properly run app.py, it calls another Python file, api_keys.py (not included in repository), which contains user and password credentials to log into our Mongo database to successfully access the data for this website.
 
 ## Tools and Sources
 
@@ -35,20 +35,10 @@ In order to correctly run our code, ensure you download PyMongo to correctly run
 - D3.js
 - JSON
 - GitHub
+- GitPages
 - console.log
 - [ytdec GitHub repository](https://github.com/ytdec)
 
 ## Deployment
 
-Deploy my app to the free static page hosting service, GitHub Pages.
-
-## Tools and Sources
-
-- Plotly
-- JavaScript
-- HTML
-- D3.js
-- JSON
-- GitHub
-- console.log
-- [ytdec GitHub repository](https://github.com/ytdec)
+This project has been published using GitPages and can be accessed via https://sean-guzman.github.io/Project-3/MongoDBHtml/index.html
