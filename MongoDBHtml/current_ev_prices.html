@@ -7,19 +7,31 @@
   <title>Document</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
+  <link rel="stylesheet" href="static/css/style.css" />
+
 
 </head>
 <body>
 
-  <div><select id="selMake" onchange="optionSelect(this.value)"><option value="">Select Make</option></select></div>
+  <div class="tab">
+    <button class="tablinks" onclick="goToPage('/marker_map.html')">Marker Map</button>
+    <button class="tablinks" onclick="goToPage('/current_ev_prices.html')">Current EV Prices</button>
+    <button class="tablinks" onclick="goToPage('/avg_price_ev_new.html')">EV/Overall Market</button>
+    <button class="tablinks" onclick="goToPage('/avg_gas_electric_prices.html')">Electric/Gas Costs</button>
+    <button class="tablinks" onclick="goToPage('/vehicle_policy_col.html')">Vehicle Policies</button>
+    <button class="tablinks" onclick="goToPage('/types_of_evs.html')">Cars by Brand</button>
+    <button class="tablinks" onclick="goToPage('/')">Home</button>
+
+  </div>
+
+  <div class="float-container"><h1>Current EV Prices (USD) by Make</h1>
+    <p>Select Car Make to view their models and prices.</p>
+    <select id="selMake" onchange="optionSelect(this.value)"><option value="">Select Make</option></select>
+  </div>
 
   <div class="chart-container" style="position: relative; height:70vh;">
     <canvas id="myChart"></canvas>
   </div>
-
-</div>
-<button class="home-button" onclick="goToIndex()">Home</button>
-</div>
 
 </body>
 
@@ -56,7 +68,10 @@
     // console.log(make);
 
     make.forEach((item) => {
-      selector.append("option").text(item).property("value", item);
+      selector
+      .append("option")
+      .text(item)
+      .property("value", item);
     })
   })
 
@@ -170,4 +185,10 @@
   };
 </script>
 
+<script>
+  function goToPage(pageURL) {
+    window.location.href = pageURL;
+  }
+
+</script>
 </html>

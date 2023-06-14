@@ -25,7 +25,7 @@ With the rise in EVs/hybrid vehicles, we are curious how the infrastructure is a
 
 ## Installation
 
-In order to correctly run our code, ensure you download PyMongo to correctly run the Flask and subsequent website.
+In order to correctly run our code, ensure you download PyMongo to correctly run the Jupyter notebooks. Python file, app.py, powers our our Flask and subsequent website. In order to properly run app.py, it calls another Python file, api_keys.py (not included in repository), which contains user and password credentials to log into our Mongo database to successfully access the data for this website.
 
 ## Tools and Sources
 

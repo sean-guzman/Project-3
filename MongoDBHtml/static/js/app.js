@@ -1,4 +1,6 @@
 // Establish URL variable
+// const url = "http://127.0.0.1:5000/get_vehicle_policy_col"
+
 const url = "https://us-east-1.aws.data.mongodb-api.com/app/data-qgrcp/endpoint/get_vehicle_policy_col"
 
 // Establish function to create visualizations
@@ -11,6 +13,8 @@ function createCharts(selectedYear) {
     let chartVar = data
     let chartVar2 = chartVar.filter(obj => obj.Year.$numberInt === selectedYear)
     console.log("The data filtered by year is:")
+
+    console.log(selectedYear);
     console.table(chartVar2)
     
     // Establish variables
@@ -72,8 +76,8 @@ function createCharts(selectedYear) {
             title: 'Number of Total Vehicles'
         },
         showlegend: false,
-        height: 400,
-        width: 600
+        height: 700,
+        width: 1200
         };  
 
     // Render the plot to the div tag with id "bar"
@@ -143,7 +147,7 @@ function createCharts(selectedYear) {
             //traceorder: 'reversed',
             // title: {}
         },
-        height: 800,
+        height: 700,
         width: 1200
     };
 
@@ -219,8 +223,3 @@ function optionChanged(newSample){
 
 // Initialize the dashboard
 init();
-
-// Return back to the homepage
-function goToIndex() {
-    window.location.href = 'index.html';
-  }
