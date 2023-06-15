@@ -176,7 +176,7 @@ function goToIndex() {
 }
 
 // Fetch charge station data and create the map
-d3.json("http://127.0.0.1:5000/get_charge_stations")
+d3.json("http://127.0.0.1:5000/static/json/us_charge_stations.json")
   .then(function(apiData) {
     let processedAPIData = apiData.map(function(d) {
       // Check and replace NaN values

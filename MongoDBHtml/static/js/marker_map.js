@@ -176,7 +176,7 @@ function goToIndex() {
 }
 
 // Fetch charge station data and create the map
-d3.json("https://us-east-1.aws.data.mongodb-api.com/app/data-qgrcp/endpoint/us_charge_stations")
+d3.json("static/json/us_charge_stations.json")
   .then(function(apiData) {
     let processedAPIData = apiData.map(function(d) {
       return {
