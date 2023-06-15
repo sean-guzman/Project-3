@@ -176,7 +176,7 @@ function goToIndex() {
 }
 
 // Fetch charge station data and create the map
-d3.json("http://127.0.0.1:5000/static/json/us_charge_stations.json")
+d3.json("https://us-east-1.aws.data.mongodb-api.com/app/data-qgrcp/endpoint/us_charge_stations")
   .then(function(apiData) {
     let processedAPIData = apiData.map(function(d) {
       // Check and replace NaN values
