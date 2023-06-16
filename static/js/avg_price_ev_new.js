@@ -34,11 +34,11 @@ d3.json(avg_price_ev_new_url).then(function(data){
     data: {
       labels: price_years,
       datasets: [
-        {label: 'ev',
+        {label: 'Electric Vehicle',
         data: ev,
         borderWidth: 1
       },
-      {label: 'new_car',
+      {label: 'Overall Market',
         data: new_car,
         borderWidth: 1
       },
@@ -73,7 +73,7 @@ d3.json(avg_price_ev_new_url).then(function(data){
       plugins: {
         title: {
             display: true,
-            text: 'Average Cost of EVs versus New Cars (01/2020 - 03/2023)'
+            text: 'Average Cost (USD) of EVs versus Overall Market (01/2020 - 03/2023)'
         }
       },
 

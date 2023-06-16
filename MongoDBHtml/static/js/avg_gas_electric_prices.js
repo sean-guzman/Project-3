@@ -1,14 +1,17 @@
-const avg_gas_electric_prices_url = "https://us-east-1.aws.data.mongodb-api.com/app/data-qgrcp/endpoint/avg_gas_electric_prices";
+const avg_gas_electric_prices_url = "http://127.0.0.1:5000/get_avg_gas_electric_prices";
 
 var years = [];
 var gas = [];
 var electric = [];
 
+// FETCH DATA
 d3.json(avg_gas_electric_prices_url).then(function(data){
 
   for (var i = 0; i < data.length; i++){
     
     var obj = data[i];
+
+    // PUSH EACH OBJECT'S TO RESPECTIVE ARRAY
 
     years.push(obj['Year']);
     gas.push(obj['Gas Value']);
@@ -17,6 +20,8 @@ d3.json(avg_gas_electric_prices_url).then(function(data){
   };
 
   // console.log(years);
+
+  // GET HTML ELEMENT WHERE TO PLACE CHART
   const ctx = document.getElementById('avg_gas_electric');
 
   const chart = new Chart(ctx, {
@@ -47,7 +52,7 @@ d3.json(avg_gas_electric_prices_url).then(function(data){
       plugins: {
         title: {
             display: true,
-            text: 'National Average Cost of Gas versus Electric (2001-2022)'
+            text: 'National Average Cost (USD) of Gas versus Electric (2001-2022)'
         }
       },
     
@@ -75,10 +80,7 @@ d3.json(avg_gas_electric_prices_url).then(function(data){
 
 });
 
-// Return back to the homepage
-function goToIndex() {
-  window.location.href = 'index.html';
-}
+
 
 
 

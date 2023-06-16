@@ -1,4 +1,4 @@
-const avg_price_ev_new_url = "https://us-east-1.aws.data.mongodb-api.com/app/data-qgrcp/endpoint/avg_price_ev_new";
+const avg_price_ev_new_url = "http://127.0.0.1:5000/get_avg_price_ev_new";
 
 var price_years = [];
 var ev = [];
@@ -11,14 +11,19 @@ d3.json(avg_price_ev_new_url).then(function(data){
     
     var obj = data[i];
 
+    // PUSH EACH OBJECT'S TO RESPECTIVE ARRAY
+
     price_years.push(obj['Dates']);
     ev.push(obj['Average EV Price']);
     new_car.push(obj['New Car Average']);
   
   };
 
-  console.log(price_years);
-  console.log(ev);
+  // console.log(price_years);
+  // console.log(ev);
+
+  // GET HTML ELEMENT WHERE TO PLACE CHART
+
   const ctx = document.getElementById('avg_price_ev_new');
 
   let delayed;
@@ -29,11 +34,11 @@ d3.json(avg_price_ev_new_url).then(function(data){
     data: {
       labels: price_years,
       datasets: [
-        {label: 'ev',
+        {label: 'Electric Vehicle',
         data: ev,
         borderWidth: 1
       },
-      {label: 'new_car',
+      {label: 'Overall Market',
         data: new_car,
         borderWidth: 1
       },
@@ -68,7 +73,7 @@ d3.json(avg_price_ev_new_url).then(function(data){
       plugins: {
         title: {
             display: true,
-            text: 'Average Cost of EVs versus New Cars (01/2020 - 03/2023)'
+            text: 'Average Cost (USD) of EVs versus Overall Market (01/2020 - 03/2023)'
         }
       },
 
@@ -85,11 +90,6 @@ d3.json(avg_price_ev_new_url).then(function(data){
   });
 
 });
-
-// Return back to the homepage
-function goToIndex() {
-  window.location.href = 'index.html';
-}
 
 
 
