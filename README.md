@@ -71,6 +71,3 @@ To take our site live, we push to GitHub Pages, slightly modifying the method in
 
 This project has been published using GitHub Pages and can be accessed via [https://sean-guzman.github.io/Project-3/MongoDBHtml/index.html](https://sean-guzman.github.io/Project-3/MongoDBHtml/index.html)
 
-## Github Pagelink
-
-https://cscar43.github.io/Project-3/MongoDBHtml/templates/index.html
